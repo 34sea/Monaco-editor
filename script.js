@@ -1,9 +1,6 @@
-
-// Configurar o loader do Monaco Editor
 require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs' } });
 
 require(['vs/editor/editor.main'], function () {
-  // Criar uma instância do Monaco Editor
   const editor = monaco.editor.create(document.getElementById('editor-container'), {
     value: `<!DOCTYPE html>
 <html>
